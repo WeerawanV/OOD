@@ -1,3 +1,32 @@
+'''ให้รับ Input เป็น  Infix  และแสดงผลลัพธ์ออกมาเป็น  Postfix   โดยจะมี Operator  5  แบบ  ได้แก่  +   -   *   /   ^
+
+class Stack:
+
+    def __init__(self):
+
+    def push(self, value):
+
+    def pop(self):
+
+    def size(self):
+
+    def isEmpty(self):
+
+inp = input('Enter Infix : ')
+
+S = Stack()
+
+print('Postfix : ', end='')
+
+### Enter Your Code Here ###
+
+while not S.isEmpty():
+
+    print(S.pop(), end='')
+
+print()
+'''
+
 class Stack:
     
     items = []
