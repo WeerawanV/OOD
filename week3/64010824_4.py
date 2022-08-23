@@ -1,3 +1,34 @@
+'''จงเขียนโปรแกรมเปลี่ยน จาก  Infix expression เป็น Postfix expression ตามตัวอย่าง
+
+class Stack :
+
+    def __init__(self,list = None) :
+
+    def isEmpty(self) :
+
+    def push(self,data) :
+
+    def pop(self) :
+
+    def size(self) :
+
+    def peek(self) :
+
+def infix2postfix(exp) :
+
+    s = Stack()
+
+    ### Enter Your Code Here ###
+
+print(" ***Infix to Postfix***")
+
+token = input("Enter Infix expression : ")
+
+print("PostFix : ")
+
+print(infix2postfix(token))
+'''
+
 class Stack :
 
     def __init__(self,list = None) :
