@@ -1,3 +1,39 @@
+'''สร้างฟังก์ชันที่รับ input เป็น list(5x5) ของ # และ - โดยแต่ละแฮช (#) แทนทุ่นระเบิดและแต่ละขีด (-) แทนจุดที่ไม่มีทุ่นระเบิด ให้ return list ที่แต่ละขีดถูกแทนที่ด้วยตัวเลขที่ระบุจำนวนของทุ่นระเบิดที่อยู่ติดกับจุดนั้น (แนวนอนแนวตั้งและแนวทแยงมุม)
+
+def num_grid(lst):
+
+    #Code Here
+
+    return lst
+
+'''lst_input = [
+
+    ["-","-","-","-","-"],
+
+    ["-","-","-","-","-"],
+
+    ["-","-","#","-","-"],
+
+    ["-","-","-","-","-"],
+
+    ["-","-","-","-","-"]
+
+]'''
+
+lst_input = []
+
+input_list = input().split(",")
+
+for e in input_list:
+
+  lst_input.append([i for i in e.split()])
+
+print("\n",*lst_input,sep = "\n")
+
+print("\n",*num_grid(lst_input),sep = "\n")
+
+'''
+
 def num_grid(lst):
   for x in range(len(lst_input)):
     for y in range(len(lst_input[x])):
