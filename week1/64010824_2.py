@@ -8,7 +8,9 @@ BMI < 18.50 แสดงผล Less Weight
 
 25 <= BMI  < 30 แสดงผล Getting Fat
 
-BMI  >= 30 แสดงผล Fat'''
+BMI  >= 30 แสดงผล Fat
+
+'''
 
 h,w = (input("Enter your High and Weight : ").split())
 bmi = (float(w) / (float(h)*float(h)))
