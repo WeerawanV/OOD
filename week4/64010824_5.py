@@ -1,4 +1,4 @@
-#กลับมาอ่านเองด้วย!!!
+''' Color rush 2 '''
 
 class Queue:
     
