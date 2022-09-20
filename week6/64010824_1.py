@@ -1,3 +1,6 @@
+''' ****** ห้ามใช้ For , While  ( ให้ฝึกเอาไว้ เนื่องจากถ้าเจอตอนสอบจะได้ 0 )
+ให้เขียน Recursive หาค่า Max ของ Input '''
+
 def findMax(arr,n):
     if len(arr) == 0: #base case
         return n
