@@ -1,3 +1,7 @@
+''' ให้น้องรับ input แล้วนำ input นั้นมาสร้าง Binary Search Tree โดย input ตัวแรกสุดจะเป็น Root เสมอ
+
+และให้หา พ่อ(father node) ของ node ที่กำหนด '''
+
 class Node:
     def __init__(self, data): 
         self.data = data  
