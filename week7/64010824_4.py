@@ -1,3 +1,13 @@
+''' ให้น้องรับ input แล้วนำ input นั้นมาสร้าง Binary Search Tree โดย input ตัวแรกสุดจะเป็น Root เสมอ
+
+โดยมีการป้อน input ดังนี้
+
+i <int> = insert data
+
+d <int> = delete data
+
+หมายเหตุ การลบนั้นจะใช้หลักการของ Inorder Successor และ จำนวน parameter มีได้มากสุด 3 ตัว '''
+
 class Node:
     def __init__(self, data): 
         self.data = data  
