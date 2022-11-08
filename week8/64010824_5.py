@@ -1,3 +1,6 @@
+''' จงเขียนฟังก์ชัน สำหรับตรวจสอบว่า Tree นี้เป็น binary search tree หรือไม่
+โดยกำหนดให้ node.data มีค่าที่ต้องการอยู่ในช่วง 0<=node.data<=100 เท่านั้น และฟังก์ชั่นมี parameter มากที่สุด4ตัว '''
+
 class Node:
     def __init__(self, data): 
         self.data = data  
