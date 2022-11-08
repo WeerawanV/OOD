@@ -1,3 +1,5 @@
+''' หาว่าค่าแรกที่ใส่เข้าไปอยู่ที่ตำแหน่งใดใน BST '''
+
 class Node:
     def __init__(self, data):
         self.data = data
