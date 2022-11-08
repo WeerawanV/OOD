@@ -23,17 +23,69 @@ class BinarySearchTree:
         self.root = None
 
     def insert(self, val):  
-        #code here
+        if self.root == None:
+            self.root = Node(val)
+            return self.root
+        root = self.root
+        while True:
+            if val < root.data:
+                if root.left == None:
+                    root.left = Node(val)
+                    return self.root
+                root = root.left
+            else:
+                if root.right == None:
+                    root.right = Node(val)
+                    return self.root
+                root = root.right
+
     def delete(self,r, data):
-        #code here
-                
+        if r is None:
+            print("Error! Not Found DATA")     
+            return
+
+        elif self.root.data == data:
+            if self.root.left == None and self.root.right == None:
+                self.root = None
+            elif self.root.left == None and self.root.right != None:
+                self.root = self.root.right
+            elif self.root.right == None and self.root.left != None:
+                self.root = self.root.left
+
+        if r.data != data:
+            if r.data > data:
+                r.left = self.delete(r.left, data)
+            else:
+                r.right = self.delete(r.right, data)
+        else:
+            if r.left is None:
+                r = r.right
+            elif r.right is None:
+                r = r.left
+            else:
+                cur = r.right 
+                while cur.left != None: 
+                    cur = cur.left 
+                r.data = cur.data
+                r.right = self.delete(r.right, cur.data) 
+        return r
+
 def printTree90(node, level = 0):
     if node != None:
         printTree90(node.right, level + 1)
         print('     ' * level, node)
         printTree90(node.left, level + 1)
 
-
 tree = BinarySearchTree()
 data = input("Enter Input : ").split(",")
-#code here
+
+for i in data:
+    temp = i.split()
+    if temp[0] == "i":
+        print("insert" , temp[1])
+        tree.insert(int(temp[1]))
+        printTree90(tree.root)
+    elif i[0] == "d":
+        print("delete", temp[1])
+        tree.delete(tree.root,int(temp[1]))
+        printTree90(tree.root)
