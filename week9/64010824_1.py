@@ -1,3 +1,7 @@
+'''รับ input เป็น list แล้วแสดงขั้นตอนของ bubble sort ตามตัวอย่าง
+
+***ห้ามใช้ Built-in Function ที่เกี่ยวกับ Sort เช่น .sort ให้น้องเขียนฟังก์ชัน Sort เอง และห้าม Import*** '''
+
 inp = [int(x) for x in input("Enter Input : ").split()]
 
 for i in range(len(inp)-1):
